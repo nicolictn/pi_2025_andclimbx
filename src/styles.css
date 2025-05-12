@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+/* importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-title: "Bebas Neue", sans-serif;
+    --font-color-title: #065768;
+    --font-weight-title: 400;
+    --font-size-title: 48px;
+    --font-text: "Inter", sans-serif;
+    --font-color-text: #000000;
+    --font-weight-text: 300;
+    --font-size-text: 20px;
+}
+
+/* mobile */
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #ff0ab5; 
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+app-root {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch; /* ocupa 100% da largura */
+	width: 100%;
+	max-width: 430px; /* largura de celular */
+	min-height: 100vh;
+	box-shadow: 0 0 12px rgba(0,0,0,0.05);
+	overflow-x: hidden;
+}
+
+
+/* Garantir que imagens e containers não quebrem o layout, usar?! */
+/* img, video, iframe {
+max-width: 100%;
+height: auto;
+} */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

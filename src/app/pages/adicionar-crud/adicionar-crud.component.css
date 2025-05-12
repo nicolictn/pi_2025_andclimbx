@@ -1,0 +1,86 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-image: url('assets/imgs/fundo-form.jpg');
+    background-size: cover;
+}
+
+h1 {
+    color: #4B5123;
+    font-size: 36px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+form {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #F5F5F5;
+    padding: 45px 20px;
+    border-radius: 30px;
+    box-shadow: 0 3px 5px #888888;
+}
+
+.input-grupo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.input-grupo label,
+.descricao label {
+    margin-left: 22px;
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    color: #211F21;
+}
+
+.input-grupo input {
+    padding: 10px;
+    margin: 0 20px;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 3px 5px #888888;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.descricao textarea {
+    padding: 10px;
+    margin: 15px 20px 0 20px;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 0 3px 5px #888888;
+    width: calc(100% - 40px);
+    height: 100px;
+    resize: none;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 15px;
+}
+
+.input-submeter {
+    display: block;
+    margin: 35px auto 0 auto;
+    padding: 10px 24px;
+    background-color: #066809;
+    color: #ffffff;
+    font-family: 'Albert Sans', sans-serif;
+    font-size: 18px;
+    border-radius: 24px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 5px #888888;
+}
+
+.input-submeter:hover {
+    background-color: #0A0;
+} */

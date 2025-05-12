@@ -1,0 +1,32 @@
+<nav class="nav" *ngIf="exibirHeader">
+  <div class="nav-container">
+    <!-- Ícone do menu -->
+    <div class="icon-menu" (click)="toggleMenu()">
+      <img
+        [src]="menuAberto ? 'assets/icons/icon_fechar_menu.png' : 'assets/icons/icon_menu.png'"
+        alt="Menu"
+        [ngClass]="{ 'animado': menuAberto }"
+      />
+    </div>
+
+    <!-- Logo -->
+    <div class="img-logo-nome">
+      <img class="img-nome-acx" src="assets/icons/icon_nome_andclimbx.png" alt="">
+    </div>
+
+    <!-- Ícone de usuário -->
+    <div class="icon-login-usuario">
+      <button mat-button routerLink="/tela-login">
+        <img src="assets/icons/icon_usuario.png" alt="">
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Menu lateral -->
+<div *ngIf="menuAberto" class="menu-lateral">
+    <button mat-button routerLink="/">Início</button>
+    <button mat-button routerLink="/produtos">Produtos</button>
+    <button mat-button routerLink="/sobre-nos">Sobre Nós</button>
+    <button mat-button routerLink="/contato">Contato</button>
+</div>

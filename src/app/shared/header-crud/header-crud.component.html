@@ -1,0 +1,33 @@
+<nav class="nav">
+  <div class="nav-container">
+      <!-- Ícone da empresa -->
+      <div class="icon-login-usuario">
+          <button mat-button routerLink="/tela-login">
+              <img src="assets/icons/icon_usuario.png" alt="">
+          </button>
+      </div>
+      
+      <!-- Logo -->
+      <div class="img-logo-nome">
+          <img class="img-nome-acx" src="assets/icons/icon_nome_andclimbx.png" alt="">
+        </div>
+        
+    </div>
+    <!-- Ícone do menu -->
+    <div class="icon-menu" (click)="toggleMenu()">
+        <img
+        [src]="menuAberto ? 'assets/icons/icon_fechar_menu.png' : 'assets/icons/icon_menu.png'"
+        alt="Menu"
+        [ngClass]="{ 'animado': menuAberto }"
+        />
+    </div>
+</nav>
+
+<!-- Menu lateral -->
+<div *ngIf="menuAberto" class="menu-lateral">
+    <button mat-button routerLink="/adicionar-crud">ADICIONAR</button>
+    <button mat-button routerLink="/pesquisar-crud">PESQUISAR</button>
+    <button mat-button routerLink="/alterar-crud">ALTERAR</button>
+    <button mat-button routerLink="/excluir-crud">EXCLUIR</button>
+    <button mat-button routerLink="/tela-login">SAIR</button>
+</div>

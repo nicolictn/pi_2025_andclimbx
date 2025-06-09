@@ -1,0 +1,101 @@
+.titulo-icon {
+    align-items: center;
+    align-content: center;
+    margin-top: 0;
+}
+
+.icons-title {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+}
+
+.icon01 {
+    position: relative;
+    top: 58px;
+    right: 35px;
+    /* border: 1px solid red; */
+}
+
+.icon02 {
+    position: relative;
+    top: 58px;
+    right: 48px;
+}
+
+.icon03 {
+    position: relative;
+    top: 58px;
+    right: 40px;
+}
+
+.decoracao-titulo {
+    width: 150px;
+    height: 4px;
+    background-color: #FFD500;
+    margin: 0 auto;
+    position: relative;
+    /* left: 75px; */
+    bottom: 20px;
+    
+}
+
+img {
+    margin-bottom: 16px;
+}
+
+.container-instituicao {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 54px;
+    /* border: 1px solid red; */
+}
+
+h1 {
+    background-color: #FFD500;
+}
+
+h1, h2 {
+    font-family: var(--font-title);
+    color: var(--font-color-title);
+    /* align-items: center;
+    text-align: center; */
+}
+
+p {
+    font-family: var(--font-text);
+    color: var(--font-color-text);
+    font-weight: 300;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    text-align: justify;
+    /* border: 1px solid red; */
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 32px;
+    margin-left: 16px;
+    /* border: 1px solid red; */
+}
+
+button {
+    background-color: #AE3930;
+    border-radius: 8px;
+    padding: 12px 32px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Albert-sans', sans-serif;
+    /* border: 1px solid red; */
+    border: none;
+    margin-bottom: 32px;
+    margin-top: 24px;
+    cursor: pointer;
+}
+
+span {
+    margin: 0;
+}

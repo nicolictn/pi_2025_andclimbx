@@ -1,3 +1,14 @@
+.container-sobre-nos {
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 54px;
+}
+
+h1 {
+    background-color: #FFD500;
+}
+
 h1, h2 {
     font-family: var(--font-title);
     color: var(--font-color-title);
@@ -5,7 +16,42 @@ h1, h2 {
     text-align: center;
 }
 
+.img-logo {
+    width: 50%;
+    /* margin-bottom: 103px; */
+}
+
 p {
     font-family: var(--font-text);
     color: var(--font-color-text);
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+h2 {
+    margin-top: 32px;
+}
+
+.decoracao-titulo {
+    width: 150px;
+    height: 4px;
+    background-color: #FFD500;
+    margin: 0 auto;
+    position: relative;
+    /* left: 75px; */
+    bottom: 20px;
+}
+
+button {
+    background-color: transparent;
+    /* border: 1px solid red; */
+    cursor: pointer;
+    border: none;
+    margin-bottom: 12px;
+}
+
+.img-acx {
+    width: 90%;
 }

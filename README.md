@@ -8,3 +8,9 @@
 
 <!-- Não esquecer de importar nos ARQUIVO APP.TS -->
 
+<!-- RODAR BANCO DE DADOS -->
+<!-- npx json-server db.json -->
+
+<!-- Caso necessário, modificar a porta do servidor/API: -->
+<!-- npx json-server --watch db.json --port 3001 -->
+

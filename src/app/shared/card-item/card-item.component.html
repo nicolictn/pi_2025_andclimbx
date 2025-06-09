@@ -1,5 +1,13 @@
-<div>
-    <div>
-        <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
-    </div>
-</div>
+
+<mat-card class="card-item" appearance="outlined">
+    <img mat-card-image [src]="imageUrl" alt="imagem">
+    <mat-card-content>
+        <p>{{descricao}}</p>
+        <p class="preco"><span>{{preco}}</span> à vista.</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-flat-button color="primary">Comprar</button>
+    </mat-card-actions>
+</mat-card>
+
+

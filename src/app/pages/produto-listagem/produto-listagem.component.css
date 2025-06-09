@@ -1,0 +1,81 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: 20px;
+  text-align: left;
+}
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  font-family: var(--font-text);
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.desc{
+  text-align: justify;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+tr:hover {
+  background-color: #f1f1f1;
+}
+button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px; /* espaço entre os botões */
+  flex-direction: column;
+  height: 100%;
+}
+
+.btn-editar {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-excluir {
+  background-color: #f44336;
+  color: white;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-incluir {
+  display: block;
+  width: 90%;
+  margin: 25px auto 350px auto;
+  padding: 10px 20px;
+  background-color: #066809;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+.btn-incluir:hover {
+  background-color: #08830c;
+}

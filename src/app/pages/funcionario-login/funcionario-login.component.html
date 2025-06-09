@@ -1,22 +1,20 @@
 <div class="content-container">
-    <form>
-        <!-- <p>fala tu</p> -->
-         <input 
-        class="input-simples"
-        id="usuario"
-        name="usuario"
-        type="usuario"
-        [(ngModel)]="login"
-        placeholder="Usuário"
-        > 
-        <input 
-        class="input-simples"
-        id="input-senha"
-        name="input-senha"
-        type="password"
-        [(ngModel)]="senha"
-        placeholder="Senha"
-        > 
-        <button class="input-submeter" (disabled)="(botaoDesabilitado)" (click)="onBotaoClicado()">ENTRAR</button>
-    </form>
+        <!--icone-->
+        <div class="container-logo">
+            <img class="img-logo-acx" src="assets/imgs/logo-acx.png" alt="">
+        </div>
+
+        <!--Titulo-->
+        <h1>LOGIN</h1>
+
+        <!--forms-->
+        <form>
+            <!-- <p>fala tu</p> -->
+            <input class="input-simples" id="usuario" name="usuario" type="usuario" [(ngModel)]="login"
+                placeholder="Usuário">
+            <input class="input-simples" id="input-senha" name="input-senha" type="password" [(ngModel)]="senha"
+                placeholder="Senha">
+            <button class="input-submeter" (disabled)="(botaoDesabilitado)" (click)="onBotaoClicado()">ENTRAR</button>
+        </form>
+   
 </div>

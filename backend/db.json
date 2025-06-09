@@ -1,16 +1,59 @@
 {
-    "usuarios": [
-        {
-            "id": 1,
-            "nome": "Juan",
-            "email": "juan@acx.com",
-            "senha": "123456"
-        },
-        {
-            "id": 2,
-            "nome": "Maria",
-            "email": "Maria@acx.com",
-            "senha": "123456"
-        }
-    ]
+  "produtos": [
+    {
+      "id": "1",
+      "categoria": "Calçado",
+      "nSerie": "101",
+      "nome": "Sapatilha X1",
+      "tamanho": "40",
+      "fabricante": "La Sportiva",
+      "quantidade": "5",
+      "preco": "1.499,90",
+      "descricao": "Sapatilha de performance para escalada esportiva."
+    },
+    {
+      "id": "2",
+      "categoria": "Calçado",
+      "nSerie": "102",
+      "nome": "Sapatilha Veloz",
+      "tamanho": "39",
+      "fabricante": "Evolv",
+      "quantidade": "6",
+      "preco": "1.549,00",
+      "descricao": "Aderência superior, ideal para boulder e esportiva."
+    },
+    {
+      "id": "3",
+      "nome": "Corda Dry",
+      "descricao": "Corda dinâmica com tratamento impermeável.",
+      "categoria": "Cordas",
+      "nSerie": "303",
+      "tamanho": "60m",
+      "fabricante": "Beal",
+      "quantidade": "3",
+      "preco": "879,50"
+    },
+    {
+      "id": "4",
+      "categoria": "Magnésio",
+      "nSerie": "404",
+      "nome": "Magnésio Pro",
+      "tamanho": "100g",
+      "fabricante": "Black Diamond",
+      "quantidade": "15",
+      "preco": "49,90",
+      "descricao": "Pó de magnésio para melhorar a aderência."
+    },
+    {
+      "id": "5",
+      "categoria": "Ancoragem",
+      "nSerie": "808",
+      "nome": "Fita Daisy",
+      "tamanho": "1,20m",
+      "fabricante": "Singing Rock",
+      "quantidade": "12",
+      "preco": "79,90",
+      "descricao": "Fita de ancoragem com costuras reforçadas. "
+    }
+  ]
 }

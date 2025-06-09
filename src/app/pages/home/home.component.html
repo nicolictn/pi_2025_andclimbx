@@ -1,38 +1,50 @@
 <div class="app_mobile_responsive">
     <div class="home-info">
-        <h1>ESCALE MAIS ALTO</h1>
-        <h1>EXPLORE SEM LIMITES</h1>
+        <h1 class="titulo-01">ESCALE MAIS ALTO</h1>
+        <h1 class="titulo-02">EXPLORE SEM LIMITES</h1>
         <p>
             Para quem vive para escalar, explorar e desafiar os próprios limites.
-        </p>
-        <p>
+            <br>
             Equipe-se e vá além!
         </p>
     </div>
     
-    <!-- aqui ficaria o carrossel de imagens, fazer componente? -->
+    <div class="slides"> <div class="slide" [ngClass]="{ ativo: count === 0 }"> 
+        <img src="assets/imgs/carrossel-01.jpg" alt=""> 
+    </div> 
+    <div class="slide" [ngClass]="{ ativo: count === 1 }"> 
+        <img src="assets/imgs/carrossel-03.jpg" alt=""> 
+    </div> <div class="slide" [ngClass]="{ ativo: count === 2 }"> 
+        <img src="assets/imgs/carrossel-02.jpg" alt=""> 
+    </div> 
+</div>
     
-    <h2>Sapatilha X-Grip Pro</h2>
-    <img src="" alt="">
+    <h2>Sapatilha <span class="titulo-03">X-Grip Pro</span></h2>
+    <div class="container-produtos-destaque">
+        <img src="assets/imgs/produto-destaque.png" alt="">
+        <button class="button-produto-destaque">EXPLORE</button>
+        <p>O X-Grip Pro combina precisão e conforto. Seu solado de borracha de alta performance garante máxima aderência em cada garra, enquanto o design anatômico oferece controle absoluto nos movimentos. Seja na rocha ou no ginásio, essa sapatilha vai transformar seu desempenho.</p>
+    </div>
     
     <!-- aqui ficaria o carrossel de produtos, fazer componente? -->
     
-    <h2>Nossos Produtos</h2>
-    <img class="icon-amarelo-detalhe" src="assets/icons/icon_amarelo.png" alt="">
+    <h2 class="title-produtos">Nossos Produtos</h2>
+    <div class="icon-amarelo-detalhe"></div>
+    <!-- <img class="icon-amarelo-detalhe" src="assets/icons/icon_amarelo.png" alt=""> -->
     <div class="apresentacao-produtos">
-        <div>
+        <div class="apresentacao-produtos-componentes">
             <img src="assets/imgs/img-apresentacao-produto-01.png" alt="" class="img-apresentacao-produto">
         </div>
         
-        <div>
+        <div class="apresentacao-produtos-componentes">
             <img src="assets/imgs/img-apresentacao-produto-02.png" alt="" class="img-apresentacao-produto">
         </div>
         
-        <div>
+        <div class="apresentacao-produtos-componentes">
             <img src="assets/imgs/img-apresentacao-produto-03.png" alt="" class="img-apresentacao-produto">
         </div>
         
-        <div>
+        <div class="apresentacao-produtos-componentes">
             <img src="assets/imgs/img-apresentacao-produto-04.png" alt="" class="img-apresentacao-produto">
         </div>
     </div>

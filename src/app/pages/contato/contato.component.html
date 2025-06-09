@@ -1,24 +1,30 @@
-<!-- <app-header></app-header>
 <h2>Como podemos ajudar?</h2>
+<div class="decoracao-titulo"></div>
 <img src="" alt="">
 <div class="contato-container">
-    <p>Entre em contato conosco através do formulário abaixo:</p>
     <form (ngSubmit)="onSubmit()" #contatoForm="ngForm">
         <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" ngModel required>
+            <label for="nome">Nome:</label> <br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" ngModel required>
         </div>
         <div class="form-group">
-            <label for="email">Endereço de mail:</label>
-            <input type="email" id="email" name="email" ngModel required>
+            <label for="email">Endereço de mail:</label> <br>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" ngModel required>
         </div>
-        div class="form-group">
+        <div class="form-group">
             <label for="telefone">Categoria do assunto:</label>
-            <input type="radio" name="" id="">
-            <input type="tel" id="telefone" name="telefone" ngModel required>
+            <br><br>
+            <select name="cars" id="cars">
+                <option value="volvo">Doação ACX - Kids</option>
+                <option value="saab">Problemas com pedido</option>
+                <option value="mercedes">Perguntas</option>
+                <option value="audi">Outro assunto</option>
+            </select>
+            <!-- <input type="tel" id="telefone" name="telefone" placeholder="Doação ACX - Kids" ngModel required> -->
+        </div>
         <div class="form-group">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" ngModel required></textarea>
+            <label for="mensagem">Mensagem:</label> <br>
+            <textarea id="mensagem" name="mensagem" placeholder="Envie sua mensagem" ngModel required></textarea>
         </div>
         <button type="submit" [disabled]="!contatoForm.valid">Enviar</button>
     </form>
@@ -26,4 +32,4 @@
     <div *ngIf="submitted">
         <p>Mensagem enviada com sucesso!</p>
     </div>
-<app-footer></app-footer> -->
+    </div> <!--tá certo-->

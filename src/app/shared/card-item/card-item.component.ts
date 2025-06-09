@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @Component({
   selector: 'app-card-item',
   standalone: true,
-  imports: [],
+  imports: [MatCardModule, MatButtonModule],
   templateUrl: './card-item.component.html',
   styleUrl: './card-item.component.css'
 })
 export class CardItemComponent {
+@Input() imageUrl: string = '';
+@Input() descricao: string = '';
+@Input() preco: string = '';
+
 
 }

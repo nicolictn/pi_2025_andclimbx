@@ -1,0 +1,32 @@
+<h1>PRODUTOS</h1>
+<div class="container-search">
+  <img src="assets/icons/icon-lupa.png" alt="">
+  <input placeholder="Pesquise aqui..." type="text" name="" id="">
+  <img class="icon-filter" src="assets/icons/icon-filter.png" alt="">
+</div>
+<div class="content-container">
+  <h2>MAGNÉSIO</h2>
+  <div class="decoracao-titulo"></div>
+  <div class="grupo">
+    <div class="card-wrapper" *ngFor="let produtosMagnesio of produtosMagnesio">
+      <app-card-item 
+        [imageUrl]="produtosMagnesio.imagem" 
+        [descricao]="produtosMagnesio.descricao" 
+        [preco]="produtosMagnesio.preco">
+      </app-card-item>
+    </div>
+  </div>
+</div>
+<div class="content-container">
+  <h2>CALÇADOS</h2>
+  <div class="decoracao-titulo"></div>
+  <div class="grupo">
+    <div class="card-wrapper" *ngFor="let produtosCalcados of produtosCalcados">
+      <app-card-item
+        [imageUrl]="produtosCalcados.imagem" 
+        [descricao]="produtosCalcados.descricao" 
+        [preco]="produtosCalcados.preco">
+      </app-card-item>
+    </div>
+  </div>
+</div>

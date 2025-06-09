@@ -16,7 +16,7 @@ export class FuncionarioLoginComponent {
   onBotaoClicado() {
   if (this.login === 'Nicoli' && this.senha === '123') {
     alert('Login realizado com sucesso!');
-  this.router.navigate(['home-crud']);
+  this.router.navigate(['adicionar-crud']);
   } else {
     alert('Login ou senha incorretos!');
   }

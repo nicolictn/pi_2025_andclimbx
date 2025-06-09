@@ -1,1 +1,66 @@
-<p>produto-listagem works!</p>
+<div class="content-container">
+  <div style="overflow-x: auto; width: 100%">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>N° Série</th>
+          <th>Categoria</th>
+          <th>Tam.</th>
+          <th>Fabricante</th>
+          <th>Qtde.</th>
+          <th>Preço</th>
+          <th>Descrição</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(produto of listaProdutos; track produto){
+        <!--@for para listar os produtos consultados pelo serviço-->
+        <tr>
+          <td>{{ produto.id }}</td>
+          <td>{{ produto.nome }}</td>
+          <td>{{ produto.nSerie }}</td>
+          <td>{{ produto.categoria }}</td>
+          <td>{{ produto.tamanho }}</td>
+          <td>{{ produto.fabricante }}</td>
+          <td>{{ produto.quantidade }}</td>
+          <td>{{ produto.preco }}</td>
+          <td class="desc">{{ produto.descricao }}</td>
+          <td class="btn">
+            <button
+              class="btn-editar"
+              [routerLink]="['/adicionar-crud', produto.id]"
+            >
+              Editar
+            </button>
+            <button class="btn-excluir" (click)="excluir(produto.id!)">
+              Excluir
+            </button>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <button class="btn-incluir" (click)="incluir()">Cadastrar</button>
+  <!--click deve chamar o metodo de incluir-->
+  <!-- (click)="incluir()" -->
+</div>
+
+<!-- <div class="container-barra-pesquisa">
+    <img src="assets/icons/lupa-pesquisa.png" alt="">
+    <input type="text">
+    <img src="assets/icons/filtro-produtos.png" alt="">
+</div>
+
+<div class="carrossel-produtos">
+    <div class="carrossel-produtos-01">
+        <h2>MAGNÉSIO</h2>
+    </div>
+
+    <div class="carrossel-produtos-02">
+        <h2>CALÇADOS</h2>
+    </div>
+</div> -->
